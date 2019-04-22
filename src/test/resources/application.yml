@@ -1,0 +1,11 @@
+
+
+interceptor:
+  rate-limiter:
+    enabled: true
+    patterns:
+      - '/**'
+
+spring:
+  application:
+    name: "rate-limiter-test"

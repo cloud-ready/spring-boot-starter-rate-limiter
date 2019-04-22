@@ -1,0 +1,31 @@
+{
+  "groups": [
+  ],
+  "properties": [
+    {
+      "name": "interceptor.rate-limiter.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": "false"
+    },
+    {
+      "name": "interceptor.rate-limiter.patterns",
+      "type": "java.util.List<java.lang.String>",
+      "defaultValue": ["/**"]
+    }
+  ],
+  "hints": [
+    {
+      "name": "interceptor.rate-limiter.enabled",
+      "values": [
+        {
+          "value": "true",
+          "description": "Enables configuration of rate limiter on startup."
+        },
+        {
+          "value": "false",
+          "description": "Disabled configuration of rate limiter on startup."
+        }
+      ]
+    }
+  ]
+}

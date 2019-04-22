@@ -10,6 +10,8 @@
 
 spring-boot-starter-rate-limiter
 
+A rate limiter based on redisson (top.infra:spring-boot-starter-redisson)
+
 ### Usage:
 
 Just put it into classpath.  
@@ -22,4 +24,12 @@ Maven:
     <version>0.0.1-SNAPSHOT</version>
     <scope>runtime</scope>
 </dependency>
+```
+
+### Build this project
+
+```bash
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home" \
+    mvn -Dskip-artifacts=true -Dskip-quality=true help:active-profiles \
+    clean install spotbugs:spotbugs spotbugs:check pmd:pmd pmd:check
 ```
